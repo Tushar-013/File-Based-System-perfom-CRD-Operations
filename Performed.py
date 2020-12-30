@@ -40,13 +40,15 @@ a.delete("Sam")
 
 
 #to access these using multiple threads like
-# t1=Thread(target=(create or read or delete),args=(KeyName,value,timeout)) #as per the operation
-# t1.start()
-# t1.join()
-#
-# t2=Thread(target=(create or read or delete),args=(key_name,value,timeout)) #as per the operation
-# t2.start()
-# t2.join()
+#as per the operation
+t1=Thread(target=(create or read or delete),args=(KeyName,value,timeout)) 
+t1.start()
+t1.join()
+
+#as per the operation
+t2=Thread(target=(create or read or delete),args=(key_name,value,timeout)) 
+t2.start()
+t2.join()
 
 
 #the program is also giving some other errors like
