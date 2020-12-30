@@ -99,7 +99,7 @@ def delete(key):
 
 #I also add additional operation to update or modify in order to change the value of key before its expiry time if provided
 
-#for modify operation
+#for update operation
 # create function "modify(KeyName,NewValue)"
 def update(key,value):
     if key not in dict:
@@ -129,12 +129,6 @@ def update(key,value):
 
 
 
-
-t1=Thread(target=create,args=("hh",44,10)) #as per the operation
-t1.start()
-t1=Thread(target=create,args=("hhh",44)) #as per the operation
-t1.start()
-t1.join()
 
 
 
