@@ -17,4 +17,4 @@ the key must be retained in the data store. Once the Time-To-Live for a key has 
 8. Appropriate error responses must always be returned to a client if it uses the data store in unexpected ways or breaches any limits.
 9. The size of file storing data must never exceeds 1GB.
 
-### Please go through the main.py and performed.py file and for given input and there output of main pdf file and output of performed pdf file that are attached to understand the working of code and how to perform the operation in more better and clear way. 
+### Please go through the main.py and performed.py file. For given input and their outputs are in "Output of main pdf file" and "Output of performed pdf file" that are attached to understand the working of code and how to perform the operation in more better and clear way.
