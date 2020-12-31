@@ -57,6 +57,7 @@ def read(key):
                 res=str(key)+":"+str(l[0])
                 # to return the value in the JSON object format i.e., "KeyName:value"
                 res=json.dumps(res)
+                #printing the result in JSON object format
                 print(res)
 
             else:
@@ -67,6 +68,7 @@ def read(key):
             res = str(key)+":"+str(l[0])
             # to return the value in the JSON object format i.e., "KeyName:value"
             res = json.dumps(res)
+            #printing the result in JSON object format
             print(res)
 
 
@@ -76,7 +78,7 @@ def read(key):
 def delete(key):
 
     if key not in dict:
-        # printing error message4 " key does not exist in database"
+        # printing error message6 " key does not exist in database"
         print("Error: The",key,"key does not exist in database. Please enter a valid Key")
 
     else:
@@ -88,7 +90,7 @@ def delete(key):
                 print(key,"key is successfully deleted")
 
             else:
-                # printing error message5 "time_to_live of key is expire"
+                # printing error message7 "time_to_live of key is expire"
                 print("Error: time-to-live of",key,"has been expired")
 
         else:
@@ -103,7 +105,7 @@ def delete(key):
 # create function "modify(KeyName,NewValue)"
 def update(key,value):
     if key not in dict:
-        # printing error message6 " key does not exist in database"
+        # printing error message8 " key does not exist in database"
         print("Error: The", key, "key does not exist in database. Please enter a valid Key")
 
     l=dict[key]
@@ -117,7 +119,7 @@ def update(key,value):
             print(key, "key is successfully updated")
 
         else:
-            # printing error message7 "time_to_live of key is expire"
+            # printing error message9 "time_to_live of key is expire"
             print("Error: time-to-live of", key, "has been expired")
 
     else:
