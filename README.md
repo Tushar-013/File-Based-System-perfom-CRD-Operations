@@ -3,7 +3,7 @@
 This is a File based System which store key-value data that supports the basic operations like  CRD(create, read, write). 
 Data store in the local storage for one single process or single laptop.
 
-The data store will support the following :
+The data store will support the following functional and non-functional requirements:
 
 1. It can be initialized using an optional file path. If one is not provided, it will reliably create itself in a reasonable location on the laptop.
 2. A new key-value pair can be added to the data store using the Create operation. The key is always a string - capped at 32chars. The value is always a JSON object - capped at 
